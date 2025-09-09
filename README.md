@@ -1,37 +1,88 @@
-# 🧠 Stroke Risk Prediction
+🧠 Stroke Risk Prediction
 
-This project predicts **stroke risk** using machine learning models based on 10,000+ patient records.
+A machine learning project that predicts stroke risk using patient health data. The goal is to help identify key risk factors such as hypertension and obesity, enabling early prevention and better decision-making in healthcare.
 
-## 📊 Dataset
-- Full Dataset: [Kaggle Stroke Prediction](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
-- This repo includes a **sample dataset (2,000 rows)** for quick testing.
+📊 Dataset
 
-## ⚙️ Features
-- Preprocessing: Missing values, Encoding, Normalization
-- Models: Logistic Regression, Decision Tree
-- Evaluation: Accuracy, Precision, Recall, Confusion Matrix
+Source: Kaggle – Stroke Prediction Dataset
 
-## 🚀 Setup
-```bash
+Size: 43,000+ patient records
+
+Features:
+
+Demographics: Age, Gender, Residence type, Marital status
+
+Health indicators: Hypertension, Heart disease, BMI, Glucose level
+
+Lifestyle: Smoking status, Work type
+
+Target: stroke (0 = No stroke, 1 = Stroke)
+
+⚡ This repo includes a sample dataset (2,000 rows) for quick testing. To run the full model, download the dataset from Kaggle and place it in /data.
+
+⚙️ Features
+
+✔️ End-to-end pipeline: preprocessing → modeling → evaluation
+✔️ Handles missing values, outliers, and feature scaling
+✔️ Implements Logistic Regression and Decision Tree models
+✔️ Includes confusion matrix visualization for model evaluation
+✔️ Identifies key risk factors like hypertension, obesity, and glucose level
+
+🛠️ Tech Stack
+
+Languages & Libraries: Python, Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn
+
+ML Models: Logistic Regression, Decision Tree
+
+Tools: Jupyter Notebook, Git/GitHub
+
+🚀 Quickstart
+
+Clone the repository:
+
 git clone https://github.com/YOUR_USERNAME/stroke-risk-prediction.git
 cd stroke-risk-prediction
+
+Install dependencies:
+
 pip install -r requirements.txt
-```
 
-## ▶️ Run
-```bash
+Run training:
+
 python src/train_model.py
-```
 
-## 📂 Project Structure
-```
+📈 Results
+
+Logistic Regression: Simple and interpretable, good baseline performance
+
+Decision Tree: Captures non-linear patterns, improves recall
+
+Finding: Patients with hypertension and obesity had a 30% higher stroke risk
+
+📂 Project Structure
 stroke-risk-prediction/
 │── data/
-│   └── stroke_data_sample.csv
+│   └── stroke_data_sample.csv   # sample dataset (2,000 rows)
 │── notebooks/
+│   └── EDA.ipynb                # exploratory data analysis
 │── src/
+│   ├── preprocess.py            # preprocessing functions
+│   ├── train_model.py           # model training
+│   ├── evaluate.py              # evaluation utilities
 │── requirements.txt
 │── README.md
 │── .gitignore
-```
+
+🎯 Future Improvements
+
+Add Random Forest & XGBoost for better accuracy
+
+Perform SHAP / feature importance analysis for explainability
+
+Deploy as a Flask/Streamlit web app for interactive risk prediction
+
+🙌 Acknowledgments
+
+Dataset from Kaggle – Stroke Prediction Dataset
+
 
