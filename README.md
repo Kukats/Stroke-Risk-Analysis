@@ -59,20 +59,6 @@ Decision Tree: Captures non-linear patterns, improves recall
 
 Finding: Patients with hypertension and obesity had a 30% higher stroke risk
 
-📂 Project Structure
-stroke-risk-prediction/
-│── data/
-│   └── stroke_data_sample.csv   # sample dataset (2,000 rows)
-│── notebooks/
-│   └── EDA.ipynb                # exploratory data analysis
-│── src/
-│   ├── preprocess.py            # preprocessing functions
-│   ├── train_model.py           # model training
-│   ├── evaluate.py              # evaluation utilities
-│── requirements.txt
-│── README.md
-│── .gitignore
-
 🎯 Future Improvements
 
 Add Random Forest & XGBoost for better accuracy
