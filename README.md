@@ -18,8 +18,6 @@ Lifestyle: Smoking status, Work type
 
 Target: stroke (0 = No stroke, 1 = Stroke)
 
-⚡ This repo includes a sample dataset (2,000 rows) for quick testing. To run the full model, download the dataset from Kaggle and place it in /data.
-
 ⚙️ Features
 
 ✔️ End-to-end pipeline: preprocessing → modeling → evaluation
